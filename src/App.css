@@ -1,0 +1,393 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  --yl:#f77547;
+  --bl:#333333;
+}
+header{
+  padding: 1rem;
+  background-color: #f7f7f7;
+}
+header nav{
+  color: var(--bl);
+  display:flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+header nav .Menu{
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right:0;
+  color: white;
+}
+.Menu button{
+  padding: 2rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.Menu button svg{
+  color: var(--yl);
+  font-size:2rem;
+}
+header nav .navigated{
+  display: none;
+  position: relative;
+}
+.menu{
+  display:none !important;
+}
+header nav .navigate.menu{
+  display: block;
+  
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.menu{
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  text-align: center;
+  padding: 2rem;
+  height: 400px;
+  gap: 50px;
+  left: 50px;
+  top:20px;
+  border-radius: 15px;
+  right:0;
+  color:white;
+}
+.menu ul li{
+  padding: 2rem;
+}
+
+.d1_50{
+  width: 50%;
+text-align: left;
+}
+.d2_50{
+  width: 50%;
+}
+.d2_50 ul{
+  
+  display: flex;
+  justify-content: space-around;
+}
+.d2_50 ul li:hover{
+  color:var(--yl);
+}
+/* app work section */
+.appwork{
+  height: 90vh;
+  background-image: url(./assets/bg.jpg) ;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.appwork .overlay{
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.appwork .overlay h2{
+  padding:1.5rem;
+  font-size: 1.1rem;
+}
+.appwork .overlay p{
+  padding:1.5rem;
+  font-size: 1.2rem;
+}
+.appwork .overlay h1{
+  font-weight: 800;
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+.appwork .overlay .button{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.appwork .overlay .button button{
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+.appwork .overlay .button button:hover{
+  transform: scale(1);
+}
+.appwork .overlay .button .appstore{
+  color: var(--yl);
+  border:2px solid var(--yl);
+  background-color: transparent;
+}
+.appwork .overlay .button .playstore{
+  color: white;
+  border-color: var(--yl);
+  font-weight: 800;
+  border:2px solid var(--yl);
+  background-color: var(--yl);
+}
+
+/* // img section  */
+#img_sec{  
+  height: 60vh;
+  display: grid;
+  place-items: center;
+}
+#img_sec .pngimg{
+  width: 750px;
+  height: 410px;
+  position: relative;
+  border-bottom: 2px solid #e7e6e6;
+}
+#img_sec img{
+  width: 100%;
+  position: absolute;
+  top: -90px;
+  height: 100%;
+  object-fit: contain;
+}
+#img_sec h1{
+  padding: 3rem;
+  color: var(--bl);
+  font-size: 2.5rem;
+  z-index: 3;
+}
+
+/* createaccount  */
+.createaccount{
+  height: 120vh;
+  padding: 8rem;
+}
+.createaccount .content{
+  display: flex;
+  gap: 0;
+  height: 100%;
+  align-items: center;
+  flex-direction: row;
+}
+.createaccount .d3_50{
+  width: 50%;
+  height: 350px;
+}
+.createaccount .d4_50{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.createaccount .d4_50 p{
+  color: var(--yl);
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.createaccount .d4_50 h1{
+  font-size: 2.5rem;
+  padding-bottom:0.3rem;
+  color: var(--bl);
+}
+.createaccount .d4_50 span p{
+  padding-top: 1rem;
+  color: var(--bl);
+  font-weight: 300;
+}
+.d3_50 .img{
+  width: 450px;
+  /* position: relative; */
+  height: 500px;
+
+}
+.createaccount img{
+  width: 100%;
+  /* position: absolute; */
+  /* left: 30%; */
+  z-index: -3434;
+  height: 100%;
+  object-fit: contain;
+}
+/* downloadapp section */
+
+.downloadapp{
+  height: 90vh;
+  background-image: url(./assets/bg_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.downloadapp .overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.downloadapp .overlay h2{
+  padding-bottom: 3rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.downloadapp .overlay p{
+font-size:1.2rem ;
+font-weight: 300;
+padding: 2rem;
+}
+
+
+.downloadapp .overlay .button{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.downloadapp .overlay .button button{
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  transform: scale(1.2);
+  border: none;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+.downloadapp .overlay .button button:hover{
+  transform: scale(1);
+}
+.downloadapp .overlay .button .appstore{
+  color: var(--yl);
+  background-color: transparent;
+  border:2px solid var(--yl);
+}
+.downloadapp .overlay .button .playstore{
+  border-color: var(--yl);
+  color: white;
+  font-weight: 800;
+  background-color: var(--yl);
+}
+
+
+
+
+/* footer  */
+footer{
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+.container{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.d_30{
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.icon_btn{
+  font-size: 2rem;
+  color: var(--yl);
+}
+
+@media (max-width:991px) {
+  .navigate{
+    display: none;
+  }
+  .Menu{
+    display: block !important;
+  }
+  .menu{
+    display: block !important;
+  }
+  .appwork .overlay{
+    background-color: white !important;
+  }
+  .appwork .overlay h2{
+    color: var(--bl);
+    margin-top:5rem ;
+  }
+  .appwork .overlay h1{
+    color: var(--bl);
+  }
+  .appwork .overlay p{
+    color: var(--bl);
+  }
+  .button{
+    flex-direction: column;
+  }
+  #img_sec .pngimg{
+    width: 100%;
+    border:none
+  }
+  #img_sec .pngimg img{
+   top: 0px;
+  }
+  #img_sec h1{
+    border-bottom: 2px solid #e7e6e6;
+    text-align: center;
+    width: 100%;
+  }
+  .createaccount{
+    height: auto;
+    margin-top: 8rem;
+    padding: 4rem;
+  }
+  .createaccount .content{
+    text-align: center;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  .createaccount img {
+    height:82%;
+  }
+  .createaccount .content .d3_50{
+    right:  50%;
+    transform: translateX(-50%);
+  }
+  .downloadapp .overlay{
+    background-color: #272b44;
+    text-align: center;
+    color: white;
+  }
+  footer .container .d_30{
+    display: none;
+  }
+  footer .container .d_50{
+    display: block;
+  }
+  footer .container{
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+  footer .container .d_50 span{
+    padding: 0.5rem;
+  }
+  footer .container .d_50 p{
+    font-size: 0.85rem;
+    gap: 50px;
+  }
+}
