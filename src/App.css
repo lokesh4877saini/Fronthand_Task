@@ -405,30 +405,4 @@ footer{
   .d3_50 .img{
     width: 190px;
   }
-  .createaccount .content .d3_50{
-  /* transform: translateX(-0%); */
-  }
-}
-@media only screen and (orientation: landscape) {
-
-  .appwork .overlay h2 {
-    margin-top: 15rem;
-  }
-  #img_sec .pngimg{
-    height: 350px;
-  }
-  #img_sec .pngimg img {
-    top: 180px;
-    width: 100%;
-  }
-  #img_sec h1{
-    margin-top: 10rem;
-  }
-  .createaccount .content{
-    margin-top: 10rem;
-  }
-  .createaccount img{
-    width:  90%;
-    height: 90%;
-  }
 }
